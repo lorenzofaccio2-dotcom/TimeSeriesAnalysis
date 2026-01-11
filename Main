@@ -100,7 +100,7 @@ forecast_df = tibble(
 
 
 
-# Aggiungi la serie osservata
+# Aggiungere la serie osservata
 forecast_df$Osservato <- tail(store$Vendite, 28)
 
 forecast_df_long <- forecast_df %>%
